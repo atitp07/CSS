@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+#i1{
+    float: right;
+}
+
+#i3{
+    float: left;
+}
+
+#i4{
+    float: right;
+}

@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(252, 252, 252);
+    min-width: auto;
+    /* min-height: 350px;
+    max-height: auto; */
+}
+
+/* nav-bar */
+
+#navbar1{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    /* position: fixed; */
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    color: aliceblue;
+}
+
+a{
+    color: aliceblue;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+#n1:hover{
+
+   border-radius: 10px;
+   transition: all 0.5s; 
+   font-size: larger;
+}
+
+/* icons */
+
+.fa-apple:hover{
+    transition: all 0.5s;
+    font-size: larger;
+}
+
+.fa-magnifying-glass:hover{ 
+    transition: all 0.5s;
+    font-size: larger;
+}
+
+.fa-bag-shopping:hover{
+    transition: all 0.5s;
+    font-size: larger;
+}
+
+/* Navbar 2 */
+
+#navbar2{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background-color: #ececfa;
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 20vh;
+}
+
+.svg{
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding-block: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 50px;
+}
+
+.navtext{
+    color: rgb(63, 63, 63);
+}
+
+span:hover{
+    color: black;
+    font-weight: bold;
+}
+
+#bgtxt1{
+    padding: 50px 0px;
+    
+}
+
+#txt1{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    margin-left: 80px;
+    
+}
+
+#txt2{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 24px;
+    float: right;
+    font-weight: bold;
+    margin: -25px 80px;
+}

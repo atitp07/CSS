@@ -1,0 +1,13 @@
+.exp{
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+}
+
+.exp:hover{
+    transition: 10s;
+    transform: skew(360deg, 360deg) translate(100px, 100px);
+    background-color: black;
+    border-radius: 15px;
+    width: 300px;
+}

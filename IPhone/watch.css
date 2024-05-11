@@ -113,3 +113,15 @@ span:hover{
     font-weight: bold;
     margin: -25px 80px;
 }
+
+.video1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#v1{
+    width: 90%;
+    border-radius: 36px;
+}
+

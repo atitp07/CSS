@@ -7,10 +7,17 @@
 
 /* header */
 
+header{
+    
+    z-index: 10;
+    width: 100%;
+}
+
 .location {
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    background-color: white;
 }
 
 #location-info {
@@ -61,13 +68,13 @@
     display: flex;
 }
 
-a {
+li > a{
     display: flex;
     text-decoration: none;
     text-transform: capitalize;
     color: antiquewhite;
     position: relative;
-    
+    padding: 0px 20px;
 }
 
 /* .nav-icon {
@@ -87,16 +94,17 @@ li {
     padding: 10px 15px;
     text-align: center;
     font-size: 20px;
+    
 }
 
 .item {
     width: 100px;
     display: none;
-    margin: 25px -20px;
     position: absolute;
     padding: 20px 0px;
     border-radius: 10px;
     background-color: #e0ddcc;
+    z-index: 10;
 }
 
 .dropdown:hover .item {
@@ -108,7 +116,7 @@ li {
     display: flex;
     font-size: 2rem;
     gap: 20px;
-    padding-left: 25px;
+    padding-left: 350px;
     color:#e0ddcc;
 }
 
@@ -162,7 +170,7 @@ li {
     display: flex;
     position: absolute;
     left: 10%;
-    bottom: -70px;
+    bottom: -80px;
     gap: 10px;
  }
 
@@ -171,7 +179,6 @@ li {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    
     height: 350px;
     width: 400px;
     text-transform: capitalize;background-image: linear-gradient( #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
@@ -228,6 +235,9 @@ li {
     height: 550px;
     width: 1000px;
     margin: 15%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
  }
 
  .about>img{
@@ -246,7 +256,7 @@ li {
 
  #txt>p:nth-child(1){
     font-size: larger;
-    color: aqua;
+    color: #28b6f6;
  }
 
  #btn3{
@@ -258,23 +268,1061 @@ li {
     border-radius: 10px;
  }
 
- /* Profile Cards */
+ /* Doctor Information Heading */
 
-.dcards{
-    height: 150px;
-    width: 150px;
-    position: relative;
+ .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(206, 227, 244);
+    margin-top: -5%;
+ }
+
+ .d-heading{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 15px 80px;
+
+ }
+
+.d-heading > h2{
+    color: #28b6f6;
 }
 
-#photo>img{
-    height: 150px;
-    width: 150px;
+.doc-info{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#detail{
+#doc-content{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 270px;
+    color: transparent;
+    opacity: 0;
+}
+
+.color {
+    width: 270px;
     height: 0px;
-    width: 150px;
+    text-transform: capitalize;
     position: absolute;
-    background: #000;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.607);
 }
 
+.doc-desk:hover .color {
+    opacity: 10;
+    height: 270px;
+    transition: height 2s;
+}
+
+.doc-desk:hover #doc-content {
+    opacity: 100;
+    transition: 2s;
+    color: aliceblue;
+    border-radius: 15px;
+    font: bold larger;
+}
+
+.doc-desk {
+    width: 270px;
+    height: 270px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.doc-desk > img {
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+/* Facilities */
+
+.facilities{
+    display: flex;
+    width: 80%;
+    height: 500px;
+    margin: 5% 0px 5% 10%; 
+    justify-content: center;
+    align-items: center;
+}
+
+#fimg{
+    display: flex;
+    width: 650px;
+    height: 500px;
+}
+
+.facility-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 650px;
+    height: 500px;
+    background-color: #004d7a;
+}
+
+.facility-container>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+#about-facilities{
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+#types-of-facilities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-stethoscope{
+    font-size: 32px;
+    color: #e0ddcc;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.fa-pills{
+    font-size: 32px;
+    color: #e0ddcc;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.fa-file-prescription{
+    font-size: 32px;
+    color: #e0ddcc;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#types-of-facilities>li>p{
+    color: white;
+}
+
+#types-of-facilities>li{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* newslletter */
+
+.newsletter-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    text-transform: capitalize;
+    margin: 5% 0px;
+  }
+  
+  .newsletter-heading > h2 {
+    color: #28b6f6;
+  }
+  
+  .newsletter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  #newsletter-card > img {
+    width: 300px;
+    height: 320px;
+  }
+  
+  #newsletter-card {
+    display: flex;
+    align-items: center;
+    background-color: rgb(206, 227, 244);
+    width: 610px;
+    height: 320px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #newsletter-content {
+    padding: 30px;
+    text-transform: capitalize;
+  }
+  
+  #newsletter-content > h2 {
+    font-size: larger;
+  }
+  
+  #newsletter-content > button {
+    background-color: #0c3483;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* patient-testimonial */
+  .testimonial-heading > h2 {
+    color: #28b6f6;
+    text-transform: capitalize;
+    margin-left: 20px;
+  }
+  
+  .testimonial-heading > h1 {
+    text-transform: capitalize;
+    margin-left: 20px;
+  }
+  
+  .medical-patient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin: 5% 0px;
+
+    background-color: rgb(206, 227, 244);
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #testimonial-card {
+    display: flex;
+    position: relative;
+    height: 300px;
+    width: 400px;
+    margin: 0px 20px;
+  }
+  
+  #testimonial-card > img {
+    position: absolute;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    left: 150px;
+    top: 50px;
+    z-index: 1;
+  }
+  
+  #testimonial-content {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    margin-top: 100px;
+    width: 400px;
+    height: 200px;
+    padding: 50px 10px 0px;
+    border-radius: 20px;
+    text-transform: capitalize;
+  }
+  
+  /* location */
+  
+  .our-location {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 0%;
+    text-transform: capitalize;
+  }
+  
+  #forms {
+    background-color: rgb(229, 253, 253);
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    line-height: 60px;
+    gap: 30px;
+  }
+  
+  #forms > input {
+    padding: 10px 20px;
+    margin: 5px 0px 0px 2%;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: none;
+  }
+
+  #forms > input:nth-child(9){
+    color: white;
+    background-color: #0c3483;
+  }
+  
+  .location-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+    margin-top: 5%;
+  }
+  
+  .location-heading > h2 {
+    color: #28b6f6;
+    text-transform: capitalize;
+  }
+  
+  .location-heading > h1 {
+    text-transform: capitalize;
+  }
+  
+  /* footer */
+  
+  .footer-main-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #004d7a;
+    background-image: url("./image/footer_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: contain;
+    color: white;
+    height: 400px;
+    width: 100%;
+  }
+  
+  footer h2 {
+    text-transform: capitalize;
+    padding-bottom: 20px;
+  }
+  
+  footer p {
+    font-size: large;
+  }
+  
+  #medisupport {
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+  }
+  
+  #medisupport > i {
+    font-size: large;
+  }
+  
+  #our-gallery {
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+  }
+  
+  #gallery > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  
+  #contact-us {
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    line-height: 40px;
+  }
+  
+  #newsletter {
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+  }
+  
+  .news-forms > input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+  }
+
+  /* -------------------------------------media-query-------------------------------- */
+
+@media (max-width: 600px){
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+    
+    /* header */
+    
+    header{
+        position: fixed;
+        z-index: 10;
+        width: 600px;
+    }
+    
+    .location {
+        overflow-x: hidden;
+        display: flex;
+        justify-content: space-around;
+        width: 600px;
+        height: 70px;
+        background-color: white;
+    }
+    
+    #location-info {
+        display: none;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        color:#004d7a;
+    }
+    
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    
+    .fa-location-dot {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .fa-phone-volume {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .fa-clock {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    /* navigation */
+    
+    .navigation {
+        display: flex;
+        background-image: linear-gradient(to right top, #051937,
+                          #004d7a, #008793, #00bf72, #a8eb12);
+        align-items: center;
+        justify-content: center;
+        height: 9vh;
+    }
+    
+    .nav {
+        display: flex;
+    }
+    
+    li > a{
+        display: flex;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: antiquewhite;
+        position: relative;
+        padding: 0px 20px;
+    }
+    
+    /* .nav-icon {
+        color: white;
+        display: flex;
+        
+    } */
+    
+    li {
+        list-style: none;
+        color: rgb(87, 90, 90);
+        
+    }
+    
+    .menu {
+        display: inline-block;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    
+    .item {
+        width: 100px;
+        display: none;
+        position: absolute;
+        padding: 20px 0px;
+        border-radius: 10px;
+        background-color: #e0ddcc;
+        z-index: 10;
+    }
+    
+    .dropdown:hover .item {
+        display: block;
+    
+    }
+    
+    .icons{
+        display: flex;
+        font-size: 2rem;
+        gap: 20px;
+        padding-left: 350px;
+        color:#e0ddcc;
+    }
+    
+    /* Main Body */
+    
+    .wrapper{
+        position: relative;
+        height: 120vh;
+        width: 100%;
+    }
+    
+    .wrapper>img{
+        width: 100%;
+        height: 700px;
+     }
+     
+     #content{
+       width: 400px;
+       height: 400px;
+       margin: -30% 0% 0% 20%;
+       color: aliceblue;
+       text-transform: capitalize;
+     }
+     
+     #btn{
+       display: flex;
+       gap: 10px;
+       margin: 10px 0px;
+     }
+     
+     #btn>button{
+       padding: 10px;
+       border-radius: 10px;
+       background-color: blue;
+       color: white;
+       text-transform: capitalize;
+       font-size: 18px;
+       cursor: pointer;
+       border: none;
+     }
+     
+     #btn>button:nth-child(1){
+        background-color: #e0ddcc;
+        color: black;
+       width: 150px;
+     }
+    
+     /* Cards */
+    
+     .time{
+        display: flex;
+        position: absolute;
+        left: 10%;
+        bottom: -80px;
+        gap: 10px;
+     }
+    
+     .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        height: 350px;
+        width: 400px;
+        text-transform: capitalize;background-image: linear-gradient( #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+     }
+    
+     .cards:nth-child(1){
+       
+        border-radius: 15px 0px 0px 15px;
+     }
+    
+     .cards:nth-child(2){
+        
+     }
+    
+     .cards:nth-child(3){
+        
+        border-radius: 0px 15px 15px 0px;
+     }
+    
+     #heading{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #e0ddcc;
+     }
+    
+     .card-content{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        color: #e0ddcc;
+     }
+    
+     #description{
+        text-align: center;
+     }
+    
+     .fa-clock{
+        font-size: 2rem;
+     }
+    
+     .fa-phone{
+        font-size: 2rem;
+     }
+    
+     .fa-heart-pulse{
+        font-size: 2rem;
+     }
+    
+     /* About Us */
+    
+     .about{
+        display: flex;
+        height: 550px;
+        width: 1000px;
+        margin: 15%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 250px;
+     }
+    
+     .about>img{
+        height: 500px;
+        width: 500px;
+     }
+    
+     #txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        height: 500px;
+        margin-left: 50px;
+     }
+    
+     #txt>p:nth-child(1){
+        font-size: larger;
+        color: #28b6f6;
+     }
+    
+     #btn3{
+        width: 100px;
+        padding: 10px;
+        color: #e0ddcc;
+        background-color: #0c3483;
+        border: none;
+        border-radius: 10px;
+     }
+    
+     /* Doctor Information Heading */
+    
+     .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 70vh;
+        background-color: rgb(206, 227, 244);
+        margin-top: -5%;
+     }
+    
+     .d-heading{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 15px 80px;
+    
+     }
+    
+    .d-heading > h2{
+        color: #28b6f6;
+    }
+    
+    .doc-info{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #doc-content{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 270px;
+        color: transparent;
+        opacity: 0;
+    }
+    
+    .color {
+        width: 270px;
+        height: 0px;
+        text-transform: capitalize;
+        position: absolute;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.607);
+    }
+    
+    .doc-desk:hover .color {
+        opacity: 10;
+        height: 270px;
+        transition: height 2s;
+    }
+    
+    .doc-desk:hover #doc-content {
+        opacity: 100;
+        transition: 2s;
+        color: aliceblue;
+        border-radius: 15px;
+        font: bold larger;
+    }
+    
+    .doc-desk {
+        width: 270px;
+        height: 270px;
+        position: relative;
+        border-radius: 15px;
+    }
+    
+    .doc-desk > img {
+        width: 270px;
+        height: 270px;
+        border-radius: 15px;
+    }
+    
+    /* Facilities */
+    
+    .facilities{
+        display: flex;
+        width: 80%;
+        height: 500px;
+        margin: 5% 0px 5% 10%; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #fimg{
+        display: flex;
+        width: 650px;
+        height: 500px;
+    }
+    
+    .facility-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 650px;
+        height: 500px;
+        background-color: #004d7a;
+    }
+    
+    .facility-container>h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-transform: capitalize;
+    }
+    
+    #about-facilities{
+        display: flex;
+        gap: 50px;
+        justify-content: space-evenly;
+    }
+    
+    #types-of-facilities{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fa-stethoscope{
+        font-size: 32px;
+        color: #e0ddcc;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .fa-pills{
+        font-size: 32px;
+        color: #e0ddcc;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .fa-file-prescription{
+        font-size: 32px;
+        color: #e0ddcc;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    #types-of-facilities>li>p{
+        color: white;
+    }
+    
+    #types-of-facilities>li{
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column ;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    
+    /* newslletter */
+    
+    .newsletter-heading {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: x-large;
+        text-transform: capitalize;
+        margin: 5% 0px;
+      }
+      
+      .newsletter-heading > h2 {
+        color: #28b6f6;
+      }
+      
+      .newsletter-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      
+      #newsletter-card > img {
+        width: 300px;
+        height: 320px;
+      }
+      
+      #newsletter-card {
+        display: flex;
+        align-items: center;
+        background-color: rgb(206, 227, 244);
+        width: 610px;
+        height: 320px;
+        margin: 20px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      #newsletter-content {
+        padding: 30px;
+        text-transform: capitalize;
+      }
+      
+      #newsletter-content > h2 {
+        font-size: larger;
+      }
+      
+      #newsletter-content > button {
+        background-color: #0c3483;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      
+      /* patient-testimonial */
+      .testimonial-heading > h2 {
+        color: #28b6f6;
+        text-transform: capitalize;
+        margin-left: 20px;
+      }
+      
+      .testimonial-heading > h1 {
+        text-transform: capitalize;
+        margin-left: 20px;
+      }
+      
+      .medical-patient {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        margin: 5% 0px;
+    
+        background-color: rgb(206, 227, 244);
+      }
+      
+      .testimonial-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      
+      #testimonial-card {
+        display: flex;
+        position: relative;
+        height: 300px;
+        width: 400px;
+        margin: 0px 20px;
+      }
+      
+      #testimonial-card > img {
+        position: absolute;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        left: 150px;
+        top: 50px;
+        z-index: 1;
+      }
+      
+      #testimonial-content {
+        position: absolute;
+        background-color: white;
+        text-align: center;
+        margin-top: 100px;
+        width: 400px;
+        height: 200px;
+        padding: 50px 10px 0px;
+        border-radius: 20px;
+        text-transform: capitalize;
+      }
+      
+      /* location */
+      
+      .our-location {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5% 0%;
+        text-transform: capitalize;
+      }
+      
+      #forms {
+        background-color: rgb(229, 253, 253);
+        text-align: center;
+        width: 500px;
+        height: 300px;
+        padding: 30px;
+        border-radius: 20px;
+        line-height: 60px;
+        gap: 30px;
+      }
+      
+      #forms > input {
+        padding: 10px 20px;
+        margin: 5px 0px 0px 2%;
+        text-transform: capitalize;
+        border-radius: 10px;
+        border: none;
+      }
+    
+      #forms > input:nth-child(9){
+        color: white;
+        background-color: #0c3483;
+      }
+      
+      .location-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: xx-large;
+        margin-top: 5%;
+      }
+      
+      .location-heading > h2 {
+        color: #28b6f6;
+        text-transform: capitalize;
+      }
+      
+      .location-heading > h1 {
+        text-transform: capitalize;
+      }
+      
+      /* footer */
+      
+      .footer-main-container {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #004d7a;
+        background-image: url("./image/footer_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: contain;
+        color: white;
+        height: 400px;
+        width: 100%;
+      }
+      
+      footer h2 {
+        text-transform: capitalize;
+        padding-bottom: 20px;
+      }
+      
+      footer p {
+        font-size: large;
+      }
+      
+      #medisupport {
+        width: 400px;
+        height: 300px;
+        padding: 30px;
+      }
+      
+      #medisupport > i {
+        font-size: large;
+      }
+      
+      #our-gallery {
+        width: 400px;
+        height: 300px;
+        padding: 30px;
+      }
+      
+      #gallery > img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+      }
+      
+      #contact-us {
+        width: 400px;
+        height: 300px;
+        padding: 30px;
+        line-height: 40px;
+      }
+      
+      #newsletter {
+        width: 400px;
+        height: 300px;
+        padding: 30px;
+      }
+      
+      .news-forms > input {
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+      }
+
+}

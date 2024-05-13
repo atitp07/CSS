@@ -1,0 +1,304 @@
+/* -------------------------------------media-query-------------------------------- */
+
+@media (max-width: 600px) {
+
+
+  /* header */
+  header {
+    z-index: 10;
+    position: fixed;
+    width: 600px;
+
+  }
+
+  #location-info {
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    height: 70px;
+    align-items: center;
+    font-size: larger;
+  }
+
+  /* location */
+
+  .location {
+    display: none;
+  }
+
+  /* navigation */
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 50px;
+    font-size: large;
+    position: fixed;
+    width: 600px;
+  }
+
+  .nav {
+    display: flex;
+    font-size: larger;
+    gap: 20px;
+    z-index: 1;
+  }
+
+  .nav-icon {
+    font-size: larger;
+    gap: 40px;
+  }
+
+  /* main-body */
+
+  .wrapper {
+    overflow-x: hidden;
+    width: 600px;
+  }
+
+  .wrapper > img {
+    width: 600px;
+    height: 500px;
+  }
+
+  #content {
+    overflow-x: hidden;
+    width: 360px;
+    font-size: small;
+    margin-top: -300px;
+  }
+
+  .timing {
+    display: none;
+  }
+
+  .timing-2 {
+    overflow-x: hidden;
+    margin-top: -80%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* cards */
+
+  .cards-2 {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  #card-content-2 {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    gap: 40px;
+    line-height: 40px;
+  }
+
+  #heading-2 {
+    display: flex;
+    gap: 10px;
+  }
+
+  .fa-clock {
+    font-size: larger;
+  }
+
+  .fa-phone-volume {
+    font-size: larger;
+  }
+
+  .fa-heart-pulse {
+    font-size: larger;
+  }
+
+  .cards-2:nth-child(1) {
+    background-color: rgb(1, 190, 190);
+  }
+  .cards-2:nth-child(2) {
+    background-color: rgb(91, 225, 181);
+  }
+  .cards-2:nth-child(3) {
+    background-color: rgb(0, 0, 160);
+  }
+
+  /* about-us */
+  .about-banner {
+    overflow-x: hidden;
+    display: flex;
+    width: 600px;
+    margin: 10% 0%;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: 1000px;
+  }
+
+  /* doctor-info */
+
+  .doc-heading {
+    width: 550px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .doc-heading > h2 {
+    text-transform: capitalize;
+  }
+
+  .doctors-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 600px;
+    height: 600px;
+  }
+
+  .doctors-desk {
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+  }
+
+  .doctors-desk > img {
+    width: 250px;
+    height: 250px;
+  }
+
+  #doctor-content {
+    display: flex;
+    align-items: center;
+    height: 30vh;
+  }
+
+  .color {
+    width: 250px;
+  }
+
+  /* facilities */
+
+  .facilities {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 950px;
+    font-size: large;
+    margin: 10% 0%;
+  }
+
+  .facility-container {
+    overflow-x: hidden;
+    width: 600px;
+  }
+
+  .facilities > img {
+    overflow-x: hidden;
+    width: 600px;
+    height: 450px;
+  }
+
+  /* news-letter */
+
+  .newsletter-heading {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+  }
+
+  .newsletter-container {
+    overflow: hidden;
+    width: 600px;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    margin: 10% 0%;
+  }
+
+  /* testimonial */
+
+  .testimonial-heading {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -70%;
+  }
+
+  .medical-patient {
+    overflow-x: hidden;
+    width: 600px;
+    height: 140vh;
+  }
+
+  .testimonial-container{
+    height: 70vh;
+  }
+
+  #testimonial-content {
+    overflow-x: hidden;
+    height: 230px;
+  }
+
+  /*our-location */
+
+  .our-location {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 20px;
+  }
+
+  #forms {
+    overflow-x: hidden;
+    height: 400px;
+  }
+
+  #forms > input {
+    overflow-x: hidden;
+    text-align: center;
+    justify-content: center;
+    width: 350px;
+  }
+
+  .location-heading {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    font-size: larger;
+  }
+
+  /* footer */
+
+  .footer-main-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    width: 600px;
+  }
+}

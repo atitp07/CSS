@@ -54,6 +54,44 @@ header {
   padding-right: 10px;
 }
 
+.animate_bounceInDown{
+  display: inline-block;
+  animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+@keyframes animate_bounceInDown {
+  /* from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.200, 0.61, 0.300, 1);
+  } */
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -1000px, 0) scaleY(0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0) scaleY(0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0) scaleY(0.98);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 /* navigation */
 
 .navigation {
@@ -85,7 +123,7 @@ a {
 
 li {
   list-style: none;
-  color: aliceblue;
+  color: black;
 }
 
 .menu {
@@ -99,7 +137,7 @@ li {
   position: absolute;
   padding: 20px;
   border-radius: 10px;
-  background-image: linear-gradient(to bottom, blue, aqua, aquamarine);
+  background-color: #e0ddcc;
 }
 
 .dropdown:hover .item {
@@ -183,14 +221,17 @@ li {
 
 #heading > .fa-clock {
   font-size: xx-large;
+  line-height: 35px;
 }
 
 .fa-phone-volume {
   font-size: xx-large;
+  line-height: 35px;
 }
 
 .fa-heart-pulse {
   font-size: xx-large;
+  line-height: 35px;
 }
 
 #heading {
@@ -791,21 +832,21 @@ footer p {
   }
 
   .fa-clock {
-    font-size: larger;
+    font-size: 2rem;
     display: flex;
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
   }
 
   .fa-phone-volume {
-    font-size: larger;
+    font-size: 2rem;
     display: flex;
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
   }
 
   .fa-heart-pulse {
-    font-size: larger;
+    font-size: 2rem;
     display: flex;
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
   }
 
   .cards-2:nth-child(1) {
